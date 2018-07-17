@@ -22,11 +22,16 @@ public class MaFonctionTest {
 	@Test
 	public void testPartition1() {
 		
+		int taille = 1;
+		
 		List<Integer> liste = Arrays.asList(1, 2, 3, 4, 5);
-		Collection<List<Integer>> result = MaFonction.partition(liste, 1);
+		Collection<List<Integer>> result = MaFonction.partition(liste, taille);
+		
+		List<Integer> itemResult = result.iterator().next();
 		
 		assertEquals(5, result.size());
-		assertEquals(Arrays.asList(1), result.iterator().next());
+		assertEquals(taille, itemResult.size());
+		assertEquals(Arrays.asList(1), itemResult);
 		
 	}
 	
@@ -36,10 +41,15 @@ public class MaFonctionTest {
 	@Test
 	public void testPartition2() {
 		
+		int taille = 2;
+		
 		List<Integer> liste = Arrays.asList(1, 2, 3, 4, 5);
-		Collection<List<Integer>> result = MaFonction.partition(liste, 2);
+		Collection<List<Integer>> result = MaFonction.partition(liste, taille);
+		
+		List<Integer> itemResult = result.iterator().next();
 		
 		assertEquals(3, result.size());
+		assertEquals(taille, itemResult.size());
 		assertEquals(Arrays.asList(1, 2), result.iterator().next());
 		
 	}	
@@ -50,10 +60,15 @@ public class MaFonctionTest {
 	@Test
 	public void testPartition3() {
 		
+		int taille = 3;
+		
 		List<Integer> liste = Arrays.asList(1, 2, 3, 4, 5);
-		Collection<List<Integer>> result = MaFonction.partition(liste, 3);
+		Collection<List<Integer>> result = MaFonction.partition(liste, taille);
+		
+		List<Integer> itemResult = result.iterator().next();
 		
 		assertEquals(2, result.size());
+		assertEquals(taille, itemResult.size());
 		assertEquals(Arrays.asList(1, 2, 3), result.iterator().next());
 		
 	}
