@@ -16,7 +16,7 @@ Important : Partez du principe que votre implémentation fera partie d'une libra
 Livraison attendu : une archive contenant les sources du projet, et les instructions pour les utiliser.
 
 
-## Préentation du contenu du projet
+## Présentation du contenu du projet
 
 ### Classe principale
 Le projet contient une classe **MaFonction** dans le package **org.test.maison**.
@@ -31,6 +31,10 @@ Trois (3) tests sont mis en place :
 - le troisième retourne des sous listes de trois éléments chacune
 
 ### Informations supplémentaires
-Utilisation de la version 1.8 de java pour utilisation de **Stream** et des expression **Lambda**
+Utilisation de la version 1.8 de java pour accès au **Stream** et aux expressions **Lambda**
 
 ## Comment tester le projet
+```
+git clone https://github.com/albertlay/test-adneom.git
+mvn clean install
+```
