@@ -1,7 +1,7 @@
 # test-adneom
 Projet de maison pour recrutement à Adneom
 
-## Objetif du projet
+## Objectif du projet
 
 1 - Écrivez une fonction « partition » qui prend un paramètre « liste » et un paramètre « taille » et retourne une liste de sous liste, où chaque sous liste a au maximum « taille » éléments.
 Exemples d'entrées et sorties :
