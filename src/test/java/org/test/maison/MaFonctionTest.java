@@ -50,7 +50,7 @@ public class MaFonctionTest {
 		
 		assertEquals(3, result.size());
 		assertEquals(taille, itemResult.size());
-		assertEquals(Arrays.asList(1, 2), result.iterator().next());
+		assertEquals(Arrays.asList(1, 2), itemResult);
 		
 	}	
 	
@@ -69,7 +69,7 @@ public class MaFonctionTest {
 		
 		assertEquals(2, result.size());
 		assertEquals(taille, itemResult.size());
-		assertEquals(Arrays.asList(1, 2, 3), result.iterator().next());
+		assertEquals(Arrays.asList(1, 2, 3), itemResult);
 		
 	}
 	
